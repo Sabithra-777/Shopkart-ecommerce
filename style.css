@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    font-size: 14px;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.carousel-item img {
+    object-fit: cover;
+    height:60vh;
+    object-position: top;
+    overflow: hidden;
+}
+
+
+.old_price {
+ font-weight: bold;
+ color:rgb(85, 81, 81);
+}
+
+.new_price {
+    font-weight: bold;
+    background-color:green;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom:2px;
+    .hot {
+    background-color: orangered;
+    color: white;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    display: inline;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index:10;
+
+}
+
+/* Enhanced Navbar with much larger font sizes */
+.navbar {
+    padding: 1.8rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #212529 !important;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 3rem;  /* Increased from 2.2rem */
+    letter-spacing: 0.5px;
+    padding-right: 3.5rem;
+    margin-right: 3.5rem;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    font-size: 3.2rem;  /* Increased from 2.4rem */
+    margin-right: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0.8rem;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 1.4rem;  /* Increased from 1.1rem */
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem !important;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link i {
+    font-size: 1.8rem;  /* Increased from 1.5rem */
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+/* For smaller screens */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    
+    .nav-item {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 0.8rem 1.5rem !important;
+        font-size: 1.3rem;
+    }
+    
+    .navbar-brand {
+        border-right: none;
+        font-size: 2.5rem;
+    }
+    
+    .navbar-brand i {
+        font-size: 2.7rem;
+    }
+}
+
+/* Main content adjustment for taller navbar */
+.main-content {
+    flex: 1 0 auto;
+    padding-top: 110px; /* Increased to account for taller navbar */
+}
+
+/* Add a little badge for cart count if needed */
+.cart-badge {
+    position: relative;
+}
+
+.cart-badge .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.4rem;
+    border-radius: 50%;
+    background-color: #dc3545;
+}
+
+/* Footer positioning */
+.main-content {
+    flex: 1 0 auto;
+    padding-top: 56px; /* Adjust based on your navbar height */
+}
+
+footer {
+    flex-shrink: 0;
+    margin-top: 0 !important;
+}
+
+/* Fix for tables */
+.table {
+    margin-bottom: 0;
+}
+
+/* Fix for sections */
+section.bg-light {
+    margin-bottom: 0 !important;
+}
+}
+/* Increase font size for navbar brand and nav links with higher specificity */
+nav.navbar .navbar-brand {
+    font-size: 2rem !important;
+    font-weight: 900 !important; /* Make ShopKart bold */
+}
+
+nav.navbar .navbar-nav .nav-link {
+    font-size: 1.5rem !important;
+}
+
